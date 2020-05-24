@@ -1,0 +1,7 @@
+10:29:43.226 [main] INFO  Academy.RediffHomePageTest - Driver gets initialized
+10:30:14.920 [main] DEBUG Academy.RediffHomePageTest - Browser should get invoked
+10:30:39.476 [main] DEBUG Academy.RediffHomePageTest - Browser should get invoked
+11:54:03.048 [main] INFO  Academy.RediffHomePageTest - Driver gets initialized
+11:55:47.302 [main] DEBUG Academy.RediffHomePageTest - Browser should get invoked
+11:56:23.951 [main] DEBUG Academy.RediffHomePageTest - Browser should get invoked
+11:58:15.390 [TestNG] INFO  Academy.RediffHomePageTest - Driver gets initialized

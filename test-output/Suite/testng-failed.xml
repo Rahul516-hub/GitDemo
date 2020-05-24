@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <listeners>
+    <listener class-name="Academy.Listeners"/>
+  </listeners>
+  <test name="Operation">
+    <classes>
+      <class name="Academy.RediffHomePageTest"/>
+    </classes>
+  </test> <!-- Operation -->
+  <test name="Valid">
+    <classes>
+      <class name="Academy.ValidateTest"/>
+    </classes>
+  </test> <!-- Valid -->
+  <test name="Verify">
+    <classes>
+      <class name="Academy.VerifyingTest"/>
+    </classes>
+  </test> <!-- Verify -->
+  <test name="Verify(failed)" parallel="tests">
+    <classes>
+      <class name="Academy.RediffHomePageTest">
+        <methods>
+          <include name="bf"/>
+          <include name="AT"/>
+        </methods>
+      </class> <!-- Academy.RediffHomePageTest -->
+      <class name="Academy.ValidateTest">
+        <methods>
+          <include name="At"/>
+          <include name="bf"/>
+        </methods>
+      </class> <!-- Academy.ValidateTest -->
+      <class name="Academy.VerifyingTest">
+        <methods>
+          <include name="Verify"/>
+          <include name="bf"/>
+        </methods>
+      </class> <!-- Academy.VerifyingTest -->
+    </classes>
+  </test> <!-- Verify(failed) -->
+</suite> <!-- Failed suite [Suite] -->
